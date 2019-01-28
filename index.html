@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--1st three meta tags MUST come first -->
     <title>Tribute Page</title><!-- page title -->
-    <link rel="stylesheet" href="css/normalize.css"><!-- css reset alternative -->
-    <link rel="stylesheet" href="css/style.css"><!-- my external stylesheet -->
+    <link href="css/mini_reset.css" rel="stylesheet"><!-- for browser reset -->
+    <link href="css/normalize.css" rel="stylesheet"><!-- for cross-browser compatibility -->
+    <link href="css/style.css" rel="stylesheet"><!-- for unique stylesheet -->
   </head>
   <body>
     <header>
+      <main id="page">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Ch. 1</a></li>
-          <li><a href="#">Ch. 2</a></li>
-          <li><a href="#">Ch. 3</a></li>
-          <li><a href="#">Ch. 4</a></li>
-          <li><a href="#">Ch. 5</a></li>
+          <article class="flex-container">
+          <li><a href="#" class="active" >Home</a></li>
+          <li><a href="#">Background</a></li>
+          <li><a href="#">Current</a></li>
+          <li><a href="#">Future</a></li>
+        </article>
         </ul>
       </nav>
       <h1>Chapter 3: A Caucus-Race and a long Tale</h1>

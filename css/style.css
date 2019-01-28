@@ -5,15 +5,39 @@ body {
   background-color: #e1e1e1;
   color: #c1c1c1;
 }
+
+p {
+  margin-bottom: .75em;
+}
 header {
   border: 1px solid #000;
 }
 nav ul {
-  list-style: circle;
+  list-style: none;
+  padding: 2em;
 }
-nav ul li {
-  display: horizontal; /*-- I know this isn't right; but need a horizontal list --*/
+nav a:link, nav a:visited{
+  color: #EDF2F4;
 }
+
+nav a:hover, nav a:active{
+  color: #AAAAAA;
+  text-decoration-style: double;
+}
+
+nav a:active{
+  color: #EEEEEE;
+  text-decoration: underline;
+}
+
+.flex-container {/*--container styles --*/
+  margin: auto;
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: row; /*-- sets direction row or column --*/
+  justify-content: space-around; /*-- aligns content on main axis --*/
+  flex-wrap: no-wrap; /*-- determines whether content wraps or not --*/
+}
+
 img {
   width: auto;
 }
