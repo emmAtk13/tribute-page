@@ -10,11 +10,11 @@ p {
   margin-bottom: .75em;
 }
 header {
-  border: 1px solid #000;
+  margin: auto;
 }
 nav ul {
   list-style: none;
-  padding: 2em;
+  padding-bottom: 1em;
 }
 nav a:link, nav a:visited{
   color: #EDF2F4;
@@ -34,7 +34,7 @@ nav a:active{
   border: 2em;
   border-color: #black;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: .3em;
   grid-template-areas:
             "head head head"
             "splash splash splash"
@@ -45,31 +45,51 @@ nav a:active{
 }
 
 .one{
+  background-color: black;
+  color: white;
   grid-area: head;
 }
 
 .two{
   grid-area: splash;
+  color: black;
+  background-color: white;
+  padding: 2em;
 }
 
 .three{
   grid-area: wall;
+  color: white;
+  background-color: pink;
+  padding: 4em;
 }
 
 .four{
   grid-area: text1;
+  color: pink;
+  background-color: white;
+  padding: 1em;
 }
 
 .five{
   grid-area: text2;
+  color: pink;
+  background-color: white;
+  padding: 1em;
 }
 
 .six{
   grid-area: text3;
+  color: pink;
+  background-color: white;
+  padding: 1em;
 }
 
 .seven{
   grid-area: footer;
+  background-color: black;
+  color: white;
+  padding: 1em;
 }
 
 .flex-container {/*--container styles --*/
