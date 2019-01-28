@@ -30,6 +30,48 @@ nav a:active{
   text-decoration: underline;
 }
 
+.grid-container{
+  border: 2em;
+  border-color: #black;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+            "head head head"
+            "splash splash splash"
+            "wall text1 text1"
+            "wall text2 text2"
+            "wall text3 text3"
+            "footer footer footer";
+}
+
+.one{
+  grid-area: head;
+}
+
+.two{
+  grid-area: splash;
+}
+
+.three{
+  grid-area: wall;
+}
+
+.four{
+  grid-area: text1;
+}
+
+.five{
+  grid-area: text2;
+}
+
+.six{
+  grid-area: text3;
+}
+
+.seven{
+  grid-area: footer;
+}
+
 .flex-container {/*--container styles --*/
   margin: auto;
   display: flex; /*-- sets the display mode--*/
