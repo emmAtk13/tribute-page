@@ -22,7 +22,6 @@ nav a:link, nav a:visited{
 
 nav a:hover, nav a:active{
   color: #AAAAAA;
-  text-decoration-style: double;
 }
 
 nav a:active{
@@ -31,8 +30,8 @@ nav a:active{
 }
 
 .grid-container{
-  border: 2em;
-  border-color: #black;
+  border: 2px dashed black;
+  padding: 1em;
   display: grid;
   grid-gap: .3em;
   grid-template-areas:
@@ -42,6 +41,13 @@ nav a:active{
             "wall text2 text2"
             "wall text3 text3"
             "footer footer footer";
+}
+
+.grid-item{
+  border: 2px solid pink;
+  padding: 1em;
+  background-color: papayawhip;
+
 }
 
 .one{
@@ -54,42 +60,32 @@ nav a:active{
   grid-area: splash;
   color: black;
   background-color: white;
-  padding: 2em;
 }
 
 .three{
   grid-area: wall;
   color: white;
-  background-color: pink;
-  padding: 4em;
 }
 
 .four{
   grid-area: text1;
   color: pink;
-  background-color: white;
-  padding: 1em;
 }
 
 .five{
   grid-area: text2;
   color: pink;
-  background-color: white;
-  padding: 1em;
 }
 
 .six{
   grid-area: text3;
   color: pink;
-  background-color: white;
-  padding: 1em;
 }
 
 .seven{
   grid-area: footer;
   background-color: black;
   color: white;
-  padding: 1em;
 }
 
 .flex-container {/*--container styles --*/
