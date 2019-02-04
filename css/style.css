@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 24px;
   line-height: .8;
-  background-color: #e1e1e1;
+  background-color: #F9F9F9;
   color: #c1c1c1;
 }
 
@@ -30,7 +30,6 @@ nav a:active{
 }
 
 .grid-container{
-  border: 2px dashed black;
   padding: 1em;
   display: grid;
   grid-gap: .3em;
@@ -40,26 +39,25 @@ nav a:active{
             "wall text1 text1"
             "wall text2 text2"
             "wall text3 text3"
+            "extra extra extra"
             "footer footer footer";
 }
 
 .grid-item{
-  border: 2px solid pink;
   padding: 1em;
-  background-color: papayawhip;
-
 }
 
 .one{
-  background-color: black;
+  background-color: #FF5E5B;
   color: white;
   grid-area: head;
 }
 
 .two{
   grid-area: splash;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #022B3A;
+  padding: 0.2em;
 }
 
 .three{
@@ -69,22 +67,27 @@ nav a:active{
 
 .four{
   grid-area: text1;
-  color: pink;
+  background-color: #00CECB;
 }
 
 .five{
   grid-area: text2;
-  color: pink;
+  background-color: #FFED66;
 }
 
 .six{
   grid-area: text3;
-  color: pink;
+  background-color:#00CECB;
 }
 
 .seven{
+  grid-area: extra;
+  background-color: #022B3A;
+}
+
+.eight{
   grid-area: footer;
-  background-color: black;
+  background-color: #FF5E5B;
   color: white;
 }
 
