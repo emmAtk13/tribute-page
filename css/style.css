@@ -9,11 +9,11 @@ body {
 p {
   margin-bottom: .75em;
 }
+
 header {
   margin: auto;
 }
 nav ul {
-  list-style: none;
   padding-bottom: 1em;
 }
 nav a:link, nav a:visited{
@@ -21,18 +21,18 @@ nav a:link, nav a:visited{
 }
 
 nav a:hover, nav a:active{
-  color: #AAAAAA;
+  color: #022B3A;
+  cursor: pointer;
 }
 
 nav a:active{
-  color: #EEEEEE;
-  text-decoration: underline;
+  color: #022B3A;
 }
 
 .grid-container{
-  padding: 1em;
+  padding: 0em;
   display: grid;
-  grid-gap: .3em;
+  grid-gap: 0em;
   grid-template-areas:
             "head head head"
             "splash splash splash"
@@ -57,7 +57,7 @@ nav a:active{
   grid-area: splash;
   color: white;
   background-color: #022B3A;
-  padding: 0.2em;
+  padding: 0em;
 }
 
 .three{
@@ -67,16 +67,19 @@ nav a:active{
 
 .four{
   grid-area: text1;
+  color: white;
   background-color: #00CECB;
 }
 
 .five{
   grid-area: text2;
+  color: white;
   background-color: #FFED66;
 }
 
 .six{
   grid-area: text3;
+  color: white;
   background-color:#00CECB;
 }
 
@@ -100,5 +103,5 @@ nav a:active{
 }
 
 img {
-  width: auto;
+  margin: auto;
 }
