@@ -14,7 +14,7 @@ header {
   margin: auto;
 }
 nav ul {
-  padding-bottom: 1em;
+
 }
 nav a:link, nav a:visited{
   color: #EDF2F4;
@@ -32,7 +32,10 @@ nav a:active{
 .grid-container{
   padding: 0em;
   display: grid;
-  grid-gap: 0em;
+  grid-gap: .5em;
+  padding-left:.5em;
+  padding-right:.5em;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
             "head head head"
             "splash splash splash"
@@ -51,6 +54,8 @@ nav a:active{
   background-color: #FF5E5B;
   color: white;
   grid-area: head;
+  padding-top:.5em;
+  padding-bottom:.5em;
 }
 
 .two{
@@ -63,6 +68,7 @@ nav a:active{
 .three{
   grid-area: wall;
   color: white;
+  padding: 0em;
 }
 
 .four{
@@ -99,7 +105,9 @@ nav a:active{
   display: flex; /*-- sets the display mode--*/
   flex-direction: row; /*-- sets direction row or column --*/
   justify-content: space-around; /*-- aligns content on main axis --*/
-  flex-wrap: no-wrap; /*-- determines whether content wraps or not --*/
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
 
 img {
