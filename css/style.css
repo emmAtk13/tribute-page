@@ -55,40 +55,7 @@ nav a:active{
   text-shadow: 2px 2px 4px #000000;
 }
 
-.centered-top {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #022B3A;
-  font-family: 'Righteous', 'Montserrat', sans-serif;
-  /*--text-emphasis-style: circle;--*/
-}
 
-.centered-body{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: #022B3A;
-  font-family:'Montserrat', sans-serif;
-  padding-bottom: .3em;
-  /*--text-emphasis-style: circle;--*/
-}
-
-.bodyOne{
-  top: 50%;
-}
-
-.bodyTwo{
-  top:70%;
-}
-
-.bodyThree{
-  top:90%;
-}
 
 .grid-container{
   padding: 0em;
@@ -100,7 +67,6 @@ nav a:active{
   grid-template-areas:
             "head head head"
             "splash splash splash"
-            "wall pic pic"
             "wall text1 text1"
             "wall text2 text2"
             "wall text3 text3"
@@ -168,11 +134,6 @@ nav a:active{
   color: white;
 }
 
-.nine{
-  grid-area: pic;
-  /*--border-bottom-color: #FF5E5B;--*/
-  color: white;
-}
 
 .flex-container {/*--container styles --*/
   margin: auto;
@@ -182,6 +143,16 @@ nav a:active{
   align-items: center;
   align-content: center;
   flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+}
+
+.column-container{
+  margin: auto;
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: column; /*-- sets direction row or column --*/
+  justify-content: space-around; /*-- aligns content on main axis --*/
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 img {
@@ -195,7 +166,8 @@ figcaption {
   align-items:center;
 }
 
-h1-5 {
+h1{
+  font-family: 'Righteous', 'Montserrat', sans-serif;
   display: block;
   font-size: 2em;
   margin: 0.67em 0;
@@ -231,7 +203,6 @@ h1-5 {
               "footer";
     }
     .three {display: none;}
-    .nine {display: none;}
     .centered-left {font-size: 30px;}
     body {font-size: 16px;}
 }
