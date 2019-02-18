@@ -37,6 +37,7 @@ nav a:active{
   text-decoration:none;
 }
 
+
 .container {
   position: relative;
   text-align: center;
@@ -104,6 +105,7 @@ nav a:active{
   color: #022B3A;
   border-left-style: outset;
   border-left-color: #FF5E5B;
+  align-self:start;
   /*--background-color: #00CECB;--*/
 }
 
@@ -112,6 +114,7 @@ nav a:active{
   color: #022B3A;
   border-right-style: outset;
   border-right-color: #FF5E5B;
+  align-self:start;
   /*--background-color: #FFED66;--*/
 }
 
@@ -120,6 +123,7 @@ nav a:active{
   color: #022B3A;
   border-left-style: outset;
   border-left-color: #FF5E5B;
+  align-self:start;
   /*--background-color:#00CECB;--*/
 }
 
@@ -142,6 +146,7 @@ nav a:active{
   justify-content: space-around; /*-- aligns content on main axis --*/
   align-items: center;
   align-content: center;
+  align-self: center;
   flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
 
@@ -152,6 +157,7 @@ nav a:active{
   justify-content: space-around; /*-- aligns content on main axis --*/
   align-items: center;
   align-content: center;
+  align-self: center;
   flex-wrap: nowrap;
 }
 
